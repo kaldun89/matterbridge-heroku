@@ -1,0 +1,15 @@
+[api.1ReLayFKru] 
+BindAddress = "127.0.0.1:1337" 
+Token = "verysecrettoken" 
+Buffer = 1000 
+RemoteNickFormat = "{NICK}"
+
+[[gateway]]
+name = "cstrike"
+enable = true
+  [[gateway.inout]]
+  account = "discord.FK_1_DiscordBridge"
+  channel = "чат_с_сервера_1"
+  [[gateway.inout]]
+  account = "api.1ReLayFKru"
+  channel = "api"
